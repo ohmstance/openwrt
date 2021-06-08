@@ -288,6 +288,7 @@ define Device/dir-615-g
   IMAGE/factory.bin := \
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | wrg-header wrgn22_dlwbr_dir615
   DEVICE_TITLE := D-Link DIR-615 G
+  DEVICE_PACKAGES := kmod-usb2
 endef
 TARGET_DEVICES += dir-615-g
 
