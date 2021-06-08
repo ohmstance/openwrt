@@ -281,6 +281,15 @@ define Device/dir-615-d
 endef
 TARGET_DEVICES += dir-615-d
 
+define Device/dir-615-g
+  DTS := DIR-615-G
+  IMAGE_SIZE := $(ralink_default_fw_size_8M)
+  IMAGES += factory.bin
+  IMAGE/factory.bin := \
+	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | wrg-header wrgn22_dlwbr_dir615
+  DEVICE_TITLE := D-Link DIR-615 G
+endef
+TARGET_DEVICES += dir-615-g
 
 define Device/dir-615-h1
   DTS := DIR-615-H1

@@ -142,6 +142,9 @@ ramips_board_detect() {
 	*"DIR-615 D")
 		name="dir-615-d"
 		;;
+	*"DIR-615 G")
+		name="dir-615-g"
+		;;
 	*"DIR-615 H1")
 		name="dir-615-h1"
 		;;
